@@ -1,10 +1,10 @@
-# Variables to be used for an automated NSX-T Deployment. #
+# Variables to be used for an automated NSX-T Deployment #
 
-# Ansibe Variable 
+## Ansible Variables ##
 state_absent: " "
 state_present: " "
 
-## ESXI and vCenter VARIABLES - INFRASTRUCTURE ##
+## ESXI and vCenter VARIABLES ##
 esxi_username: ' '
 esxi_ip_address: ' '
 esxi_infrastructure_fqdn: ' '
@@ -24,7 +24,6 @@ searchpath: " "
 vcsa_size: ' '
 vcsa_ova_file: ' '
 datastore: ' '
-#datastore: ' '
 datastore_esxi01: ' '
 esxi_network: ' '
 datacenter_name: ' '
@@ -39,13 +38,10 @@ vm_folder_name_nsx_infrastructure: ' '
 vm_folder_name_tenant_01: ' '
 vm_folder_name_tenant_02: ' '
 
-
-## NSXT VARIABLES - DATA CENTER INFRASTRUCTURE ##
+## NSXT VARIABLES ##
 nsxt_virtual_machine_name: " "
 nsxt_hostname: " "
 nsxt_ova_file: " " # => 3.2.0 
-
-
 nsxt_ova_size: " "
 nsxt_port_group: " "
 nsxt_audit_user: " " 
@@ -64,18 +60,16 @@ nsxt_validate_certs: False
 nsxt_license: " "
 nsxt_ntp_server: " "
 
-## NSXT VARIABLES - INFRASTRUCTURE ##
+## NSXT VARIABLES ##
 nsxt_transportzone_overlay_display_name: " "
 nsxt_transportzone_vlan_display_name: " "
 nsxt_edge_mtu: " "
-
 nsxt_ippool_tep_compute: " "
 nsxt_ippool_tep_edge: " "
 nsxt_named_teaming_policy_name_01: " "
 nsxt_named_teaming_policy_name_02: " "
 nsxt_teaming_policy_link01: " "
 nsxt_teaming_policy_link02: " "
-
 nsxt_transportnode_profile_name: " "
 nsxt_uplink_teaming_policies: ["TOR-1", "TOR-2"]
 nsxt_edge_nvds_name: " "
@@ -104,7 +98,6 @@ nsxt_edge_cluster_01: " "
 nsxt_edge_cluster_02: " "
 nsxt_edge_cluster_03: " "
 nsxt_edge_cluster_profile: " "
-
 nsxt_transportnode_esxi02: " "
 nsxt_transportnode_esxi02_ip: " "
 nsxt_transportnode_esxi03: " "
@@ -113,7 +106,6 @@ nsxt_edge_data_networks_TOR_01: " "
 nsxt_edge_data_networks_TOR_02: " "
 
 ## Cumulus - INFRASTRUCTURE ##
-
 vx_01_virtual_machine_name: " "
 vx_02_virtual_machine_name: " "
 vx_03_virtual_machine_name: " "
@@ -122,4 +114,3 @@ vx_spine_virtual_machine_name: " "
 vx_ova_file: ' '
 vx_management_port_group: " "
 vx_trunk_port_group: " "
-
